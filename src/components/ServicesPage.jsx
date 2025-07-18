@@ -135,7 +135,7 @@ const ServicesPage = () => {
     <div>
       <div className=" bg-white">
         <div className="max-w-7xl mx-24 pt-24 pb-4">
-          <h1 className="text-[57px] md:text-6xl font-semibold text-black">
+          <h1 className="text-[57.03px] font-madefor md:text-6xl font-semibold text-black">
             Mobile Apps
           </h1>
         </div>
@@ -146,10 +146,10 @@ const ServicesPage = () => {
           <div key={i} className="border-b border-t border-gray-500 py-5">
             <div className="grid lg:grid-cols-2 gap-8 items-start">
               <div>
-                <h3 className="text-[24px] font-semibold text-black py-2 mb-6">{title}</h3>
+                <h3 className="text-[23.76px] font-madefor font-semibold text-black py-2 mb-6">{title}</h3>
               </div>
-              <div>
-                <p className="text-black leading-relaxed mb-6">
+              <div >
+                <p className="text-gray-700 leading-relaxed mb-6 text-[16px] font-madefor">
                   {i === 0 &&
                     "Our services cover a wide range of software solutions, including mobile app development, web design, backend services, SaaS implementations, and efficient DevOps practices. We ensure top-notch quality and customer satisfaction."}
                   {i === 1 &&
@@ -159,7 +159,7 @@ const ServicesPage = () => {
                 </p>
                 <a
                   href="#"
-                  className="text-black hover:text-blue-800 font-normal"
+                  className="text-gray-700 hover:text-blue-800  text-[14px] font-madefor font-normal"
                 >
                   {i === 0 ? "Learn More" : i === 1 ? "Explore Services" : "View More"}
                 </a>
@@ -172,10 +172,10 @@ const ServicesPage = () => {
       <section className="py-12 bg-white">
         <div className=" max-w-[1380px] h-auto mx-auto pl-6 pr-20">
           <div className="text-center mb-16">
-            <h2 className="text-[62px] pt-24 md:text-[57px] font-semibold text-black mb-6">
+            <h2 className="text-3xl pt-24 md:text-[57.03px] font-semibold font-madefor text-black mb-6">
               Success Stories
             </h2>
-            <p className="text-[16px] text-black max-w-4xl mx-auto leading-relaxed">
+            <p className="text-[16px] font-madefor text-gray-700 max-w-4xl mx-auto leading-relaxed">
               Explore our case studies to see how we have helped businesses like
               yours achieve their software goals and enhance their  <br/> digital
               presence.
@@ -192,10 +192,10 @@ const ServicesPage = () => {
                   />
                 </div>
                 <div className="lg:order-2">
-                  <h3 className="text-2xl font-semibold text-black mb-4">
+                  <h3 className="text-[23.76px] font-semibold font-madefor text-black mb-4">
                     {story.title}
                   </h3>
-                  <p className="text-black leading-relaxed">
+                  <p className="text-gray-700 text-[16px] font-madefor leading-relaxed">
                     {story.description}
                   </p>
                 </div>
@@ -209,7 +209,7 @@ const ServicesPage = () => {
         <div className="max-w-full mx-auto">
           <div className="grid lg:grid-cols-[600px_auto] gap-8">
             <div>
-              <h2 className="text-[55px] font-semibold text-black mb-8 px-24">FAQs</h2>
+              <h2 className="text-[54.66px] font-semibold font-madefor text-black mb-8 px-24">FAQs</h2>
             </div>
 
             <div style={{ backgroundColor: '#F0F0F0' }} className="text-black p-12 max-w-full mr-24">
@@ -219,7 +219,7 @@ const ServicesPage = () => {
             <div className="w-max-full flex items-center justify-between px-8 mb-6">
               {!showSearch ? (
               <>
-              <h3 className="text-3xl font-bold text-black">Frequently asked questions</h3>
+              <h3 className="text-3xl pl-28 font-madefor font-bold text-center text-black">Frequently asked questions</h3>
                 <button
                   onClick={() => setShowSearch(true)}
                   className="text-black hover:text-gray-700"
@@ -298,11 +298,11 @@ const ServicesPage = () => {
                       onClick={() => toggleFAQ(index)}
                       className="flex items-center justify-between w-full text-left py-4"
                     >
-                      <span className="text-black font-medium pr-6">
+                      <span className="text-gray-800 font-medium pr-6">
                         {faq.question}
                       </span>
                       <svg
-                        className={`w-5 h-5 text-gray-500 transition-transform ${
+                        className={`w-5 h-5 text-gray-800 transition-transform ${
                           expandedFAQ === index ? "rotate-180" : ""
                         }`}
                         fill="none"
@@ -319,7 +319,7 @@ const ServicesPage = () => {
                     </button>
                     {expandedFAQ === index && (
                       <div className="pb-4">
-                        <p className="text-black leading-relaxed mb-10">
+                        <p className="text-gray-800 leading-relaxed mb-10">
                           {faq.answer}
                         </p>
                         {faq.showSocial && <SocialIcons />}

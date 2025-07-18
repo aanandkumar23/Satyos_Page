@@ -1,4 +1,5 @@
 import React from 'react';
+import './fonts.css';
 
 const Hero = () => {
   return (
@@ -14,16 +15,16 @@ const Hero = () => {
   
 
 
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div className="absolute  inset-0 bg-black bg-opacity-40"></div>
 
-      <div className="relative z-10 font-sans  text-left max-w-fit space-y-3">
-        <p className="text-white px-4 pb-3 text-[41.533px] sm:text-3xl md:text-4xl lg:text-[41px] font-normal leading-snug">
+      <div className="relative z-10 font-madefor text-left max-w-fit space-y-3">
+        <p className="text-white px-4 pb-3 text-2xl sm:text-3xl md:text-[41.533px] lg:text-[43px] font-normal leading-snug">
           Welcome to Satyos Solutions, your one-stop
         </p>
-        <p className="text-white px-4 pb-3 text-2xl sm:text-3xl md:text-4xl lg:text-[41px] font-normal leading-snug">
+        <p className="text-white px-4 pb-3 text-2xl sm:text-3xl md:text-4xl lg:text-[43px] font-normal leading-snug">
           destination for innovative mobile and web
         </p>
-        <p className="text-white px-4 pb-3 text-2xl sm:text-3xl md:text-4xl lg:text-[41px] font-normal leading-snug">
+        <p className="text-white px-4 pb-3 text-2xl sm:text-3xl md:text-4xl lg:text-[43px] font-normal leading-snug">
           application services.
         </p>
       </div>

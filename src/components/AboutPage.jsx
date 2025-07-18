@@ -10,11 +10,14 @@ const AboutPage = () => {
       
       <section className="relative pb-16">
         <div className="max-w-6xl mx-auto pt-20 px-6">
+          
           <div className="bg-gray-100  shadow-lg h-[400px] max-w-xl mx-auto relative z-10">
-            <h2 className="text-4xl md:text-[43px] pt-14 font-semibold mb-6 text-center">
+            <div style={{ backgroundColor: '#F0F0F0' }} className="font-madefor">
+
+            <h2 className="text-4xl md:text-[42.77px] font-madefor pt-14 font-semibold mb-6 text-center">
               About Satyos <br /> Solutions
             </h2>
-            <p className="text-center text-black leading-relaxed">
+            <p className="text-center md:text-[16px] text-gray-800 font-madefor leading-relaxed">
               Satyos Solutions private limited is a leading provider of <br />
               mobile application services, specializing in Flutter, React<br />
               Native, iOS, Android, web, backend, SaaS services, and<br />
@@ -22,6 +25,7 @@ const AboutPage = () => {
               company services to individuals looking to develop websites<br />
               and applications.
             </p>
+          </div>
           </div>
         </div>
        
@@ -34,9 +38,9 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="grid md:grid-cols-2 items-center gap-24 py-20 max-w-7xl mx-24">
+      <section className="grid md:grid-cols-2 items-center gap-28 py-20 max-w-7xl mx-24">
   <div className="relative w-full  my-16 h-32 md:h-48">
-    <h3 className="absolute inset-0 flex items-center justify-center text-white text-[57px] font-bold z-10 bg-black/40">
+    <h3 className="absolute inset-0 flex items-center justify-center font-madefor text-white text-[57.03px] font-bold z-10 bg-black/40">
       Our Mission
     </h3>
 
@@ -48,7 +52,7 @@ const AboutPage = () => {
   </div>
 
   <div className="pt-1">
-    <p className="text-black text-[16px] leading-relaxed pt-0">
+    <p className="text-black text-[16px] font-madefor leading-relaxed py-0 text-start">
       At Satyos Solutions, we are dedicated to delivering top-notch<br />
       mobile application services and software solutions tailored to our <br />
       clients' needs.Our mission is to empower businesses and <br />
@@ -59,7 +63,7 @@ const AboutPage = () => {
 </section>
 
       <section className="py-10 max-w-7xl mx-24">
-        <h3 className="text-[43px] font-normal mb-8">
+        <h3 className="text-[42.77px] font-madefor font-normal mb-8">
           Our vision is to be the go-to software company for those seeking <br/>
            the best-in-class mobile applications and web portfolios.We aim to<br/>
           revolutionize the software industry with our SaaS services and <br/>
@@ -72,7 +76,7 @@ const AboutPage = () => {
       <div style={{ backgroundColor: '#F0F0F0' }} className="text-black">
         <section className="py-44 text-center">
           <div className="text-center border-r border-gray-200">
-            <p className="text-black text-[16px] max-w-5xl mx-auto">
+            <p className="text-black text-[16px] font-madefor max-w-5xl mx-auto">
               With a focus on quality, innovation, and customer satisfaction,
               we strive to set new standards in the software development realm..
             </p>

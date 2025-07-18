@@ -25,17 +25,17 @@ const ContactPage = () => {
 
   return (
     <div>
-      <section className="pt-36 bg-white">
+      <section className="pt-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-[57px] md:text-5xl font-semibold text-black py-10">Our Contact Details</h1>
-          <p className="text-black leading-relaxed mb-8 text-4">
+          <h1 className="text-[57px] md:text-[57.03px] font-semibold font-madefor text-black pb-2">Our Contact Details</h1>
+          <p className="text-gray-700 font-madefor leading-relaxed mb-4 text-[16px]">
             Satyos Solutions private limited, located in Noida, IN, offers a wide range of<br />
              mobile application services including Flutter, React Native, iOS, Android, <br />
              web development, backend, Saas services, and DevOps.Our target <br />
              audience includes individuals seeking top-notch software solutions for <br />
              their websites and web portfolios.
           </p>
-          <div className="space-y-2 text-black mb-8">
+          <div className="space-y-1 font-madefor text-gray-700 mb-8">
             <p>Satyos Solutions Pvt Ltd</p>
             <p>B-74, Ground Floor Sector -2 Noida, 201301</p>
             <p>+91 7291919888</p>
@@ -152,14 +152,14 @@ const ContactPage = () => {
       </section>
 
       <section className="py-60 pb-96 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto ">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[57px] font-semibold md:text-6xl text-black mb-8">Get in Touch</h2>
+              <h2 className="md:text-[57.03px] font-semibold font-madefor text-black mb-8">Get in Touch</h2>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-black mb-4">Send Us a Message</h3>
+              <h3 className="text-[23.76px] font-madefor font-semibold text-black mb-4">Send Us a Message</h3>
               <p className="text-black mb-6">Let's Discuss Your Project</p>
               <button className="text-black hover:text-black font-normal underline">Submit</button>
             </div>

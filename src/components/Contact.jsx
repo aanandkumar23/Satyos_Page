@@ -29,16 +29,16 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto ">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-[65px] md:text-5xl font-semibold text-black mb-6">Contact Us Today</h2>
-            <p className="text-black text-[16px] mb-40 leading-relaxed">
+            <h2 className="font-madefor text-3xl md:text-[57.03px] font-semibold text-black mb-10">Contact Us Today</h2>
+            <p className="text-gray-800 font-madefor text-[16px] mb-40 leading-relaxed">
               Reach out to us for customized software solutions tailored to your<br />
               specific requirements and busines<br />
               goals.
             </p>
 
             <div className="mb-12">
-              <h3 className="text-[24px] font-bold text-black mb-4">Let's Connect</h3>
-              <div className="space-y-2 text-[16px]">
+              <h3 className="text-[23.76px] font-madefor font-bold text-black mb-4">Let's Connect</h3>
+              <div className="space-y-2 font-madefor text-[16px]">
                 <a
                   href="mailto:contact@satyossolutions.com"
                   className="block text-gray-800 hover:text-black underline"
@@ -52,11 +52,11 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-[28px] font-semibold text-black mb-8">Contact us</h3>
+            <h3 className="text-[28px] font-madefor font-semibold text-black mb-8">Contact us</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="firstName" className="block text-[14px] font-medium text-gray-700 mb-2">
+                  <label htmlFor="firstName"  className="block text-[14px] font-medium text-gray-700 mb-2">
                     First name
                   </label>
                   <input
@@ -138,7 +138,7 @@ const Contact = () => {
               <div className="pt-1">
                 <button
                   type="submit"
-                  className="w-full md:w-auto px-28 py-1 bg-transparent border border-black text-gray-700 rounded-full hover:bg-gray-50 transition-colors"
+                  className="w-full md:w-auto px-28 py-1 bg-transparent border border-black text-black rounded-full hover:bg-black hover:text-white transition-colors"
                 >
                   Submit
                 </button>

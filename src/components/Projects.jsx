@@ -31,25 +31,25 @@ const Projects = () => {
   return (
     <section className="bg-white py-20 pl-20 ">
       <div className="text-center mb-16">
-        <h2 className="text-[57px]  font-semibold text-black mb-6">Our Portfolio</h2>
-        <p className="text-[16px] text-gray-900 max-w-4xl mx-auto">
+        <h2 className="text-[57.03px] font-madefor font-semibold text-black mb-6">Our Portfolio</h2>
+        <p className="text-[16px] font-madefor text-gray-700 max-w-4xl mx-auto">
           Explore our diverse portfolio showcasing our expertise in mobile apps, web development, and software solutions.
         </p>
       </div>
-      <div className="space-y-20">
+      <div className="space-y-5">
         {sections.map((section, index) => (
           <div
             key={index}
-            className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+            className="grid grid-cols-1 md:grid-cols-[2fr_3fr] pl-8 gap-20 items-center"
           >
             <div className="order-2 md:order-1">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-[23.76px] font-madefor font-semibold text-black mb-4">
                 {section.title}
               </h3>
-              <p className="text-black text-[16px] mb-4">{section.description}</p>
+              <p className="text-gray-800 font-madefor text-[16px] mb-4">{section.description}</p>
               <a
                 href="#"
-                className="text-black font-normal  hover:text-blue-500"
+                className="text-gray-900 font-madefor text-[14px]  font-normal  hover:text-blue-500"
               >
                 {section.link}
               </a>
@@ -58,7 +58,7 @@ const Projects = () => {
               <img
                 src={section.image}
                 alt={section.title}
-                className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500"
+                className="w-full h-64 object-cover "
               />
             </div>
           </div>
