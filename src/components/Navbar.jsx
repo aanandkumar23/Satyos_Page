@@ -18,10 +18,10 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white">
-      <div className="max-w-full mx-auto pl-8 pr-14">
+      <div className="max-w-full mx-auto pl-4 pr-8 lg:pl-8 lg:pr-14">
         <div className="flex justify-between items-center h-16 md:h-24">
 
-          <Link to="/" className="flex items-center h-28">
+          <Link to="/" className="flex items-center h-14 lg:h-28">
             <img
               src="src/components/satyoslogo.avif "
               alt="SATYOS Logo"
@@ -49,7 +49,7 @@ const Navbar = () => {
 
           <div className="md:hidden">
             <button onClick={() => setIsOpen(true)} className="text-black">
-              <Menu className="h-6 w-6" />
+              <Menu className="h-10 w-10 lg:h-6 lg:w-6 " />
             </button>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 </NavLink>
               ))}
             </div>
-            <button onClick={() => setIsOpen(false)} className="text-black">
+            <button onClick={() => setIsOpen(false)} className="text-black self-start ml-auto">
               <X className="h-6 w-6" />
             </button>
           </div>

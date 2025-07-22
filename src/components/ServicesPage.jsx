@@ -134,22 +134,22 @@ const ServicesPage = () => {
   return (
     <div>
       <div className=" bg-white">
-        <div className="max-w-7xl mx-24 pt-24 pb-4">
-          <h1 className="text-[57.03px] font-madefor md:text-6xl font-semibold text-black">
+        <div className="max-w-7xl mx-12 lg:mx-24 pt-14 lg:pt-24 pb-2 lg:pb-4">
+          <h1 className="text-[26px]  lg:text-[57.03px] font-madefor  font-semibold text-black">
             Mobile Apps
           </h1>
         </div>
       </div>
 
-      <div className=" max-w-7xl mx-24 py-16">
+      <div className=" max-w-7xl mx-12 lg:mx-24 py-16">
         {["Backend Services", "SaaS Solutions", "DevOps"].map((title, i) => (
-          <div key={i} className="border-b border-t border-gray-500 py-5">
+          <div key={i} className="border-b border-t border-gray-500 py-8">
             <div className="grid lg:grid-cols-2 gap-8 items-start">
               <div>
-                <h3 className="text-[23.76px] font-madefor font-semibold text-black py-2 mb-6">{title}</h3>
+                <h3 className="text-[23.76px] font-madefor font-semibold text-black py-0 lg:py-2 mb-0 lg:mb-6">{title}</h3>
               </div>
               <div >
-                <p className="text-gray-700 leading-relaxed mb-6 text-[16px] font-madefor">
+                <p className="text-gray-700 leading-relaxed mb-2 lg:mb-6 text-[16px] font-madefor">
                   {i === 0 &&
                     "Our services cover a wide range of software solutions, including mobile app development, web design, backend services, SaaS implementations, and efficient DevOps practices. We ensure top-notch quality and customer satisfaction."}
                   {i === 1 &&
@@ -169,33 +169,33 @@ const ServicesPage = () => {
         ))}
       </div>
 
-      <section className="py-12 bg-white">
-        <div className=" max-w-[1380px] h-auto mx-auto pl-6 pr-20">
+      <section className="py-4 lg:py-12 bg-white">
+        <div className=" max-w-[1380px] h-auto mx-auto lg:pl-6 lg:pr-20">
           <div className="text-center mb-16">
-            <h2 className="text-3xl pt-24 md:text-[57.03px] font-semibold font-madefor text-black mb-6">
+            <h2 className="text-[26px] sm:text-center pt-0 lg:pt-24 md:text-[57.03px] font-semibold font-madefor text-black mb-6">
               Success Stories
             </h2>
-            <p className="text-[16px] font-madefor text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Explore our case studies to see how we have helped businesses like
-              yours achieve their software goals and enhance their  <br/> digital
-              presence.
+            <p className="text-[16px] font-madefor text-gray-700 max-w-4xl px-10 mx-auto leading-relaxed">
+              <span className="sm:inline lg:block">Explore our case studies to see how we have helped businesses like
+              yours achieve their software goals and</span>
+              <span className="sm:inline lg:block"> enhance theirdigital presence.</span>
             </p>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-6 mx-12">
             {stories.map((story, index) => (
               <div key={index} className="grid lg:grid-cols-2 gap-10 items-center">
                 <div className="lg:order-1">
                   <img
                     src={story.image}
                     alt={story.title}
-                    className="w-full h-50 object-cover"
+                    className="h-[40vh] w-[80vw] sm:w-[80vw] sm:h-[50vh] lg:w-full lg:h-[30vh] object-cover"
                   />
                 </div>
-                <div className="lg:order-2">
-                  <h3 className="text-[23.76px] font-semibold font-madefor text-black mb-4">
+                <div className="lg:order-2 ">
+                  <h3 className="text-[23.76px] px-6 lg:px-0 font-semibold font-madefor text-black mb-4">
                     {story.title}
                   </h3>
-                  <p className="text-gray-700 text-[16px] font-madefor leading-relaxed">
+                  <p className="text-gray-700 px-6 lg:px-0 text-[16px] text-left font-madefor leading-relaxed">
                     {story.description}
                   </p>
                 </div>
@@ -209,17 +209,17 @@ const ServicesPage = () => {
         <div className="max-w-full mx-auto">
           <div className="grid lg:grid-cols-[600px_auto] gap-8">
             <div>
-              <h2 className="text-[54.66px] font-semibold font-madefor text-black mb-8 px-24">FAQs</h2>
+              <h2 className="text-[26px] lg:text-[54.66px] font-semibold font-madefor text-black mb-0 lg:mb-8 px-12 lg:px-24">FAQs</h2>
             </div>
 
-            <div style={{ backgroundColor: '#F0F0F0' }} className="text-black p-12 max-w-full mr-24">
+            <div style={{ backgroundColor: '#F0F0F0' }} className="text-black py-10 mx-6 px-4 lg:mx-0 sm:px-12 sm:w-[80] lg:max-w-full sm:mx-12 lg:mr-24">
             {/*<div className="bg-gray-50  ">*/}
 
               
             <div className="w-max-full flex items-center justify-between px-8 mb-6">
               {!showSearch ? (
               <>
-              <h3 className="text-3xl pl-28 font-madefor font-bold text-center text-black">Frequently asked questions</h3>
+              <h3 className= "text-[16px] lg:text-[26px] lg:pl-28 font-madefor font-bold text-left lg:text-center text-black">Frequently asked questions</h3>
                 <button
                   onClick={() => setShowSearch(true)}
                   className="text-black hover:text-gray-700"

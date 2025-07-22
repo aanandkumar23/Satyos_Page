@@ -27,13 +27,13 @@ const ContactPage = () => {
     <div>
       <section className="pt-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-[57px] md:text-[57.03px] font-semibold font-madefor text-black pb-2">Our Contact Details</h1>
-          <p className="text-gray-700 font-madefor leading-relaxed mb-4 text-[16px]">
-            Satyos Solutions private limited, located in Noida, IN, offers a wide range of<br />
-             mobile application services including Flutter, React Native, iOS, Android, <br />
-             web development, backend, Saas services, and DevOps.Our target <br />
-             audience includes individuals seeking top-notch software solutions for <br />
-             their websites and web portfolios.
+          <h1 className="text-[26px] md:text-[57.03px] font-semibold font-madefor text-black pb-4">Our Contact Details</h1>
+          <p className="text-gray-700 font-madefor leading-relaxed mb-4 px-7 lg:px-0 text-[16px]">
+            <span className="inline lg:block">Satyos Solutions private limited, located in Noida, IN, offers a wide range of</span>
+             <span className="inline lg:block">mobile application services including Flutter, React Native, iOS, Android, </span>
+             <span className="inline lg:block">web development, backend, Saas services, and DevOps.Our target</span> 
+             <span className="inline lg:block">audience includes individuals seeking top-notch software solutions for</span> 
+             <span className="inline lg:block">their websites and web portfolios.</span>
           </p>
           <div className="space-y-1 font-madefor text-gray-700 mb-8">
             <p>Satyos Solutions Pvt Ltd</p>
@@ -51,8 +51,8 @@ const ContactPage = () => {
           backgroundSize: "80% 80%",
           }}
       >
-        <div className="max-w-4xl pt-24 mx-auto px-6">
-          <div className="bg-white  pt-16 md:p-16 shadow-lg">
+        <div className="max-w-4xl pt-28 lg:pt-24 mx-auto px-6">
+          <div className="bg-white pt-16 md:p-16 shadow-lg w-[80%] mx-auto sm:w-[80%] px-7 lg:w-full">
             <h2 className="text-[28px] font-semibold text-black mb-8">Contact Us</h2>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -141,7 +141,7 @@ const ContactPage = () => {
               <div className="pt-1">
                 <button
                   type="submit"
-                  className="w-full md:w-auto px-32 py-1 bg-transparent border border-black text-black rounded-full hover:bg-black hover:text-white transition-colors- font-light"
+                  className="w-[55vw] lg:w-full md:w-auto lg:px-32 py-1 bg-transparent border border-black text-black rounded-full hover:bg-black hover:text-white transition-colors- font-light"
                 >
                   Submit
                 </button>
@@ -151,17 +151,17 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section className="py-60 pb-96 bg-white">
+      <section className=" pt-28 lg:py-60 pb-96 bg-white">
         <div className="max-w-7xl mx-auto ">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="md:text-[57.03px] font-semibold font-madefor text-black mb-8">Get in Touch</h2>
+              <h2 className="text-[28px] px-7 lg:px-0 md:text-[57.03px] font-semibold font-madefor text-black mb-0 lg:mb-8">Get in Touch</h2>
             </div>
 
             <div>
-              <h3 className="text-[23.76px] font-madefor font-semibold text-black mb-4">Send Us a Message</h3>
-              <p className="text-black mb-6">Let's Discuss Your Project</p>
-              <button className="text-black hover:text-black font-normal underline">Submit</button>
+              <h3 className="text-[18px] lg:text-[23.76px] px-7 lg:px-0  font-madefor font-semibold text-black mb-4">Send Us a Message</h3>
+              <p className="text-black px-7 text-[16px] lg:px-0  font-madefor mb-1 lg:mb-6">Let's Discuss Your Project</p>
+              <button className="text-black px-7 text-[16px] lg:px-0  font-madefor hover:text-black font-normal underline">Submit</button>
             </div>
           </div>
         </div>

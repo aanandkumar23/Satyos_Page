@@ -29,10 +29,10 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-white py-20 pl-20 ">
+    <section className="bg-white pt-56 lg:py-20 lg:pl-20 ">
       <div className="text-center mb-16">
-        <h2 className="text-[57.03px] font-madefor font-semibold text-black mb-6">Our Portfolio</h2>
-        <p className="text-[16px] font-madefor text-gray-700 max-w-4xl mx-auto">
+        <h2 className="text-[26px] lg:text-[57.03px] sm:justify-center font-madefor font-semibold text-black mb-6">Our Portfolio</h2>
+        <p className="text-[16px]  font-madefor text-gray-700 max-w-4xl mx-auto">
           Explore our diverse portfolio showcasing our expertise in mobile apps, web development, and software solutions.
         </p>
       </div>
@@ -46,10 +46,10 @@ const Projects = () => {
               <h3 className="text-[23.76px] font-madefor font-semibold text-black mb-4">
                 {section.title}
               </h3>
-              <p className="text-gray-800 font-madefor text-[16px] mb-4">{section.description}</p>
+              <p className="text-gray-800 font-madefor text-[16px] pr-16 mb-4">{section.description}</p>
               <a
                 href="#"
-                className="text-gray-900 font-madefor text-[14px]  font-normal  hover:text-blue-500"
+                className="text-gray-900 font-madefor text-[14px]  font-normal   hover:text-blue-500"
               >
                 {section.link}
               </a>
@@ -58,7 +58,7 @@ const Projects = () => {
               <img
                 src={section.image}
                 alt={section.title}
-                className="w-full h-64 object-cover "
+                className="h-[40vh] w-[80vw] sm:h-[50vh] lg:w-full mt-8 lg:h-64 object-cover "
               />
             </div>
           </div>
