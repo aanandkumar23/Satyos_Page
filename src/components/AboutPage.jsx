@@ -14,10 +14,10 @@ const AboutPage = () => {
           <div className="bg-gray-100  shadow-lg h-[60vh] lg:min-h-[400px] w-[80vw] lg:max-w-xl mx-auto relative z-10">
             <div style={{ backgroundColor: '#F0F0F0' }} className="font-madefor">
 
-            <h2 className="text-[24px] md:text-[42.77px] font-madefor pt-14 font-semibold mb-0 lg:mb-6 text-center">
+            <h2 className="text-[24px] md:text-[42.77px] font-madefor pt-10 lg:pt-14 font-semibold mb-4 lg:mb-6 text-center">
               About Satyos <br /> Solutions
             </h2>
-            <p className="text-center text-[14px] px-7 lg:px-0 md:text-[16px] text-gray-800 font-madefor leading-relaxed">
+            <p className="text-center text-[14px] px-12 lg:px-0 md:text-[16px] text-gray-800 font-madefor leading-relaxed">
               <span className="inline lg:block">Satyos Solutions private limited is a leading provider of </span>
               <span className="inline lg:block">mobile application services, specializing in Flutter, React</span>
               <span className="inline lg:block">Native, iOS, Android, web, backend, SaaS services, and</span>
@@ -38,7 +38,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="grid md:grid-cols-2 items-center gap-28 pb-2 lg:py-20 max-w-7xl px-10 lg:mx-24">
+      <section className="grid md:grid-cols-2 items-center gap-28 pb-2 lg:py-20 max-w-7xl px-3 lg:mx-24">
   <div className="relative w-full  mt-16 mb-10  h-32 md:h-48">
     <h3 className="absolute inset-0 py-28 flex items-center justify-center font-madefor text-white text-[26px] lg:text-[57.03px] font-bold z-10">
       Our Mission
@@ -47,12 +47,12 @@ const AboutPage = () => {
     <img
       src="https://static.wixstatic.com/media/11062b_e810179068ca4d49a050ee31eec103b6~mv2.jpg/v1/fill/w_773,h_182,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Electronic%20Gadgets.jpg"
       alt="Our Mission"
-      className="h-[35vh] w-[80vw] lg:w-full lg:h-full object-cover"
+      className="h-[35vh] w-[95vw] lg:w-full lg:h-full object-cover px-3 lg:px-0"
     />    
   </div>
    
   <div className="text-black"> 
-    <p className="text-black text-[16px] font-madefor leading-relaxed pl-1 pr-14 lg:px-0 py-0 text-start">
+    <p className="text-black text-[16px] font-madefor leading-relaxed pl-3 pr-14 lg:px-0 py-0 text-start">
       <span className="inline lg:block">At Satyos Solutions, we are dedicated to delivering top-notch</span>
       <span className="inline lg:block">mobile application services and software solutions tailored to our</span> 
       <span className="inline lg:block">clients' needs.Our mission is to empower businesses and </span>
@@ -62,8 +62,8 @@ const AboutPage = () => {
   </div>
 </section>
 
-      <section className="py-10 max-w-full px-11 lg:ml-24">
-        <h3 className="text-[22px] lg:text-[42.77px] font-madefor py-14 lg:py-0 font-normal mb-96 lg:mb-8">
+      <section className="py-6 lg:py-10 max-w-full px-5 lg:ml-24">
+        <h3 className="text-[22px] lg:text-[42.77px] font-madefor py-10 lg:py-0 font-normal mb-20 lg:mb-8">
           <span className="inline lg:block">Our vision is to be the go-to software company for those seeking </span>
           <span className="inline lg:block">the best-in-class mobile applications and web portfolios.We aim to</span>
           <span className="inline lg:block">revolutionize the software industry with our SaaS services and</span>

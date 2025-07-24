@@ -25,10 +25,10 @@ const ContactPage = () => {
 
   return (
     <div>
-      <section className="pt-24 bg-white">
+      <section className="pt-6 lg:pt-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-[26px] md:text-[57.03px] font-semibold font-madefor text-black pb-4">Our Contact Details</h1>
-          <p className="text-gray-700 font-madefor leading-relaxed mb-4 px-7 lg:px-0 text-[16px]">
+          <p className="text-gray-700 font-madefor leading-relaxed mb-4 px-3 lg:px-0 text-[16px]">
             <span className="inline lg:block">Satyos Solutions private limited, located in Noida, IN, offers a wide range of</span>
              <span className="inline lg:block">mobile application services including Flutter, React Native, iOS, Android, </span>
              <span className="inline lg:block">web development, backend, Saas services, and DevOps.Our target</span> 
@@ -48,10 +48,10 @@ const ContactPage = () => {
         style={{
           backgroundImage:
             "url('https://static.wixstatic.com/media/7ab5b2d2cbfb4c70a0b7be3cd488e0df.jpg/v1/fill/w_1664,h_570,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Electronic%20Devices%20on%20Table.jpg')",
-          backgroundSize: "80% 80%",
+          backgroundSize: "90% 90%",
           }}
       >
-        <div className="max-w-4xl pt-28 lg:pt-24 mx-auto px-6">
+        <div className="max-w-4xl pt-28 lg:pt-24 mx-auto px-3">
           <div className="bg-white pt-16 md:p-16 shadow-lg w-[80%] mx-auto sm:w-[80%] px-7 lg:w-full">
             <h2 className="text-[28px] font-semibold text-black mb-8">Contact Us</h2>
 
@@ -143,7 +143,7 @@ const ContactPage = () => {
                   type="submit"
                   className="w-[55vw] lg:w-full md:w-auto lg:px-32 py-1 bg-transparent border border-black text-black rounded-full hover:bg-black hover:text-white transition-colors- font-light"
                 >
-                  Submit
+                  Submit {/*Change made*/}
                 </button>
               </div>
             </form>
@@ -151,7 +151,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section className=" pt-28 lg:py-60 pb-96 bg-white">
+      <section className=" pt-28 lg:py-60 pb-12 lg:pb-96 bg-white">
         <div className="max-w-7xl mx-auto ">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>

@@ -1,3 +1,4 @@
+import { div } from "framer-motion/client";
 import React, { useState } from "react";
 import { FaFacebookF, FaXTwitter, FaLinkedinIn, FaRegCopy } from "react-icons/fa6";
 import { FiSearch } from "react-icons/fi";
@@ -19,8 +20,9 @@ const ServicesPage = () => {
       },
       {
         question: "Do you provide ready-made software or build custom solutions?",
-        answer:
-          "Both. We have plug-and-play SaaS tools for common use-cases, but we also build fully customized platforms as per your business needs and scale.",
+        answer:(<div>
+          Both. We have plug-and-play SaaS tools for common use-cases, but we also build fully customized platforms as per your business needs and scale.
+        </div> ),
         showSocial: true,
       },
       {
@@ -39,8 +41,8 @@ const ServicesPage = () => {
       },
       {
         question: "What is your typical project timeline?",
-        answer:
-          "It depends on complexity. MVPs take 3–6 weeks. Full-scale SaaS platforms can range between 2–6 months.",
+        answer: (
+        <div>It depends on complexity. MVPs take 3–6 weeks. Full-scale SaaS platforms can range between 2–6 months.</div>),    
         showSocial: true,
       },
       {
@@ -134,14 +136,14 @@ const ServicesPage = () => {
   return (
     <div>
       <div className=" bg-white">
-        <div className="max-w-7xl mx-12 lg:mx-24 pt-14 lg:pt-24 pb-2 lg:pb-4">
+        <div className="max-w-7xl mx-4 lg:mx-24 pt-10 lg:pt-24 pb-0 lg:pb-4">
           <h1 className="text-[26px]  lg:text-[57.03px] font-madefor  font-semibold text-black">
             Mobile Apps
           </h1>
         </div>
       </div>
 
-      <div className=" max-w-7xl mx-12 lg:mx-24 py-16">
+      <div className=" max-w-7xl mx-4 lg:mx-24 py-8 lg:py-16">
         {["Backend Services", "SaaS Solutions", "DevOps"].map((title, i) => (
           <div key={i} className="border-b border-t border-gray-500 py-8">
             <div className="grid lg:grid-cols-2 gap-8 items-start">
@@ -181,21 +183,21 @@ const ServicesPage = () => {
               <span className="sm:inline lg:block"> enhance theirdigital presence.</span>
             </p>
           </div>
-          <div className="space-y-6 mx-12">
+          <div className="space-y-4 mx-4 lg:mx-12">
             {stories.map((story, index) => (
               <div key={index} className="grid lg:grid-cols-2 gap-10 items-center">
                 <div className="lg:order-1">
                   <img
                     src={story.image}
                     alt={story.title}
-                    className="h-[40vh] w-[80vw] sm:w-[80vw] sm:h-[50vh] lg:w-full lg:h-[30vh] object-cover"
+                    className="h-[40vh] w-[95vw] sm:w-[80vw] sm:h-[50vh]  lg:w-full lg:h-[30vh] object-cover"
                   />
                 </div>
                 <div className="lg:order-2 ">
-                  <h3 className="text-[23.76px] px-6 lg:px-0 font-semibold font-madefor text-black mb-4">
+                  <h3 className="text-[23.76px] font-semibold font-madefor text-black mb-2">
                     {story.title}
                   </h3>
-                  <p className="text-gray-700 px-6 lg:px-0 text-[16px] text-left font-madefor leading-relaxed">
+                  <p className="text-gray-700 text-[16px] mb-10 lg:mb-0 text-left font-madefor leading-relaxed">
                     {story.description}
                   </p>
                 </div>
@@ -212,17 +214,17 @@ const ServicesPage = () => {
               <h2 className="text-[26px] lg:text-[54.66px] font-semibold font-madefor text-black mb-0 lg:mb-8 px-12 lg:px-24">FAQs</h2>
             </div>
 
-            <div style={{ backgroundColor: '#F0F0F0' }} className="text-black py-10 mx-6 px-4 lg:mx-0 sm:px-12 sm:w-[80] lg:max-w-full sm:mx-12 lg:mr-24">
+            <div style={{ backgroundColor: '#F0F0F0' }} className="text-black py-10 mx-6 px-4 lg:mx-0 sm:px-12 sm:w-[80vw] lg:max-w-full sm:mx-12 lg:mr-24">
             {/*<div className="bg-gray-50  ">*/}
 
               
-            <div className="w-max-full flex items-center justify-between px-8 mb-6">
+            <div className="w-max-full flex items-center justify-between px-1 lg:px-8 mb-6">
               {!showSearch ? (
               <>
-              <h3 className= "text-[16px] lg:text-[26px] lg:pl-28 font-madefor font-bold text-left lg:text-center text-black">Frequently asked questions</h3>
+              <h3 className= "text-[14px] lg:text-[26px] lg:pl-28 font-madefor font-bold text-left lg:text-center text-black">Frequently asked questions</h3>
                 <button
                   onClick={() => setShowSearch(true)}
-                  className="text-black hover:text-gray-700"
+                  className="text-black  hover:text-gray-700"
                 >
                   <FiSearch />
                 </button>
@@ -236,14 +238,14 @@ const ServicesPage = () => {
                     onChange={(e) => setSearchTerm(e.target.value)}
                     placeholder="Looking for something?"
                     autoFocus
-                    className="w-full border border-blue-600 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-800 placeholder-gray-400"
+                    className="w-full border border-blue-600 py-3 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-800 placeholder-gray-400"
                   />
                   <button
                     onClick={() => {
                       setSearchTerm("");
                       setShowSearch(false);
                     }}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-800 hover:text-gray-800 text-lg"
+                    className="absolute right-4 top-1/2  px-1 transform -translate-y-1/2 text-gray-800 hover:text-gray-800 text-lg"
                   >
                     ×
                   </button>
@@ -252,12 +254,13 @@ const ServicesPage = () => {
             )}
           </div>
 
-              <div className="hidden md:flex space-x-6   mb-8 ">
+          <div className="w-full">
+              <div className="hidden  md:flex space-x-6   mb-8 ">
                 {Object.keys(faqs).map((tab) => (
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`pb-3 px-1 font-medium transition-colors ${
+                    className={`pb-3 px-0 font-medium transition-colors ${
                       activeTab === tab
                         ? "text-blue-600 border-b-2 border-blue-600"
                         : "text-gray-600 hover:text-gray-900"
@@ -268,7 +271,9 @@ const ServicesPage = () => {
                 ))}
               </div>
 
-              <div className="md:hidden mb-6">
+              
+
+              <div className="md:hidden mb-6 w-full">
                 <label
                   htmlFor="faq-category"
                   className="block text-sm font-medium text-black mb-2"
@@ -280,7 +285,7 @@ const ServicesPage = () => {
                   name="faq-category"
                   value={activeTab}
                   onChange={(e) => setActiveTab(e.target.value)}
-                  className="block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-base focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full border border-gray-300 shadow-sm py-2 px-2 text-base focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 >
                   {Object.keys(faqs).map((tab) => (
                     <option key={tab} value={tab}>
@@ -288,6 +293,7 @@ const ServicesPage = () => {
                     </option>
                   ))}
                 </select>
+              </div>
               </div>
               
 
@@ -302,7 +308,7 @@ const ServicesPage = () => {
                         {faq.question}
                       </span>
                       <svg
-                        className={`w-5 h-5 text-gray-800 transition-transform ${
+                        className={`w-5 h-5 min-w-[20px] min-h-[20px] text-gray-800 transition-transform ${
                           expandedFAQ === index ? "rotate-180" : ""
                         }`}
                         fill="none"
@@ -316,12 +322,13 @@ const ServicesPage = () => {
                           d="M19 9l-7 7-7-7"
                         />
                       </svg>
+
                     </button>
                     {expandedFAQ === index && (
                       <div className="pb-4">
-                        <p className="text-gray-800 leading-relaxed mb-10">
+                        <div className="text-gray-800 leading-relaxed mb-10">
                           {faq.answer}
-                        </p>
+                        </div>
                         {faq.showSocial && <SocialIcons />}
                       </div>
                     )}

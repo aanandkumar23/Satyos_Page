@@ -29,10 +29,10 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-white pt-56 lg:py-20 lg:pl-20 ">
-      <div className="text-center mb-16">
+    <section className="bg-white pt-12 lg:pt-56 lg:py-20 lg:pl-20 ">
+      <div className="text-center mb-10 lg:mb-16">
         <h2 className="text-[26px] lg:text-[57.03px] sm:justify-center font-madefor font-semibold text-black mb-6">Our Portfolio</h2>
-        <p className="text-[16px]  font-madefor text-gray-700 max-w-4xl mx-auto">
+        <p className="text-[16px] px-5 lg:px-0 font-madefor text-gray-700 max-w-4xl mx-auto">
           Explore our diverse portfolio showcasing our expertise in mobile apps, web development, and software solutions.
         </p>
       </div>
@@ -40,16 +40,16 @@ const Projects = () => {
         {sections.map((section, index) => (
           <div
             key={index}
-            className="grid grid-cols-1 md:grid-cols-[2fr_3fr] pl-8 gap-20 items-center"
+            className="grid grid-cols-1 bg-white md:grid-cols-[2fr_3fr]  gap-20 items-center"
           >
             <div className="order-2 md:order-1">
-              <h3 className="text-[23.76px] font-madefor font-semibold text-black mb-4">
+              <h3 className="text-[23.76px] font-madefor px-5 font-semibold text-black mb-4">
                 {section.title}
               </h3>
-              <p className="text-gray-800 font-madefor text-[16px] pr-16 mb-4">{section.description}</p>
+              <p className="text-gray-800 bg-white font-madefor text-[16px] px-5 mb-4">{section.description}</p>
               <a
                 href="#"
-                className="text-gray-900 font-madefor text-[14px]  font-normal   hover:text-blue-500"
+                className="text-gray-900 font-madefor text-[14px]  px-5 font-normal   hover:text-blue-500"
               >
                 {section.link}
               </a>
@@ -58,7 +58,7 @@ const Projects = () => {
               <img
                 src={section.image}
                 alt={section.title}
-                className="h-[40vh] w-[80vw] sm:h-[50vh] lg:w-full mt-8 lg:h-64 object-cover "
+                className="h-[40vh] w-[95vw] sm:h-[50vh] px-5 lg:w-full mt-8 lg:h-64 object-cover "
               />
             </div>
           </div>

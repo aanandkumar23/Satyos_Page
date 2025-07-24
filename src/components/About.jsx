@@ -1,4 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
+
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +31,7 @@ const About = () => {
   return (
     <section id="about" className="py-4 sm:py-6  lg:py-24  bg-white">
 
-      <h2 className="  font-madefor text-[24px] md:text-[60px] lg:text-[100px] font-semibold whitespace-nowrap lg:pl-4 w-full ">
+      <h2 className="  font-madefor text-[24px] md:text-[60px] text-center lg:text-[100px] font-semibold whitespace-nowrap  w-full ">
           <span className="text-black">DISCOVE</span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-950 to-purple-300">
             R OUR EXP
@@ -42,9 +49,9 @@ const About = () => {
         
 
         <h3 className="font-madefor text-[28px] md:text-4xl lg:text-[57.03px] font-semibold text-black pt-8 lg:pt-52 mt-4 mb-4">Our Services</h3>
-        <p className="font-madefor px-7 sm:text-center text-[16px] pt-0 lg:py-4 text-gray-800 lg:text-[16px] max-w-4xl mx-auto">
-          From mobile applications to web development, backend services, and DevOps solutions, we <br />
-          offer a comprehensive range of software services to meet your needs.
+        <p className="font-madefor px-6 sm:text-center text-[16px] pt-0 lg:py-4 text-gray-800 lg:text-[16px] max-w-4xl mx-auto">
+         <span className="inline lg:block"> From mobile applications to web development, backend services, and DevOps solutions, we </span>
+         <span className="inline lg:block">offer a comprehensive range of software services to meet your needs.</span>
         </p>
       </div>
 
@@ -85,8 +92,9 @@ const About = () => {
       </div>
       </div>
       <div style={{ backgroundColor: '#FFFFFF' }} className="text-black">
-        <div className="pt-20 pb-40 max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="pt-20 pb-0 lg:pb-40 max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
         <h2 className="text-[26px] lg:text-[57.03px] font-madefor font-semibold text-center text-gray-900 mb-12">Client Testimonials</h2>
+        <div className="hidden lg:flex">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 justify-evenly">
           <div className="text-center">
             <p className="text-gray-700 lg:mb-4 font-madefor text-[16px]">
@@ -124,11 +132,66 @@ const About = () => {
             <h4 className="text-[16px] font-madefor lg:pt-10 lg:pb-2 font-semibold text-gray-900">Deep Parmar</h4>
             <p className="text-[14px] font-madefor text-gray-700 ">Digi Finance</p>
           </div>
+          </div>
+          </div>
+          <div className="relative md:hidden">
+          <div>
+          <div className="absolute right-10 top-2 z-10 mb-4 flex gap-7">
+            <button className="swiper-button-next !bg-white text-blue-500 w-1 h-1 md:w-3 md:h-3 flex items-center justify-center">
+              
+           </button>
+          </div>
+          <div className="absolute right-28 top-2 z-10 mb-4 flex gap-7">
+            <button className="swiper-button-prev !bg-white text-blue-500 w-1 h-1 md:w-3 md:h-3 flex items-center justify-center">
+              
+            </button>
+          </div>
         </div>
-        </div>
-      </div>
-    </section>
-  );
+        <Swiper
+          modules={[Navigation]}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          spaceBetween={20}
+          slidesPerView={1}
+        >     
+        {[
+      {
+        text: "The team at Satyos Solutions is highly skilled and dedicated to delivering top-quality results.",
+        name: "Ajay Kamath",
+        title: "Founder, Brick Tree",
+      },
+      {
+        text: "Working with Satyos Solutions has been a game-changer for our business growth.",
+        name: "David Brown",
+        title: "Executive Manager, JSB Group",
+      },
+      {
+        text: "Their attention to detail and commitment to excellence set Satyos Solutions apart.",
+        name: "Rajan Malik",
+        title: "Nue Fabrics",
+      },
+      {
+        text: "Satyos Solutions is our go-to partner for all our software development needs.",
+        name: "Deep Parmar",
+        title: "Digi Finance",
+      },
+      ].map((testimonial, index) => (
+        <SwiperSlide key={index}>
+          <div className="text-center px-4 py-6">
+            <p className="text-gray-900 mt-4 mb-4 font-madefor text-[16px]">{testimonial.text}</p>
+            <h4 className="text-[16px] font-madefor pt-2 font-semibold text-gray-900">{testimonial.name}</h4>
+            <p className="text-[14px] font-madefor text-gray-900">{testimonial.title}</p>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+    </div>
+    </div>
+    </div>
+  </section>
+    );
 };
 
 export default About;
