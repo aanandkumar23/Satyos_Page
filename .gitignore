@@ -50,4 +50,4 @@ coverage
 .cache
 
 # others
-*.log
+*.lognode_modules
