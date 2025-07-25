@@ -60,10 +60,10 @@ const About = () => {
           <div className=" pt-20 pb-16 text-center border-r border-gray-200">
           <h3 className=" font-madefor text-[23.76px] font-semibold text-black mb-4">Web Development</h3>
           <p className="font-madefor text-gray-900 leading-relaxed text-[16px] font-normal">
-            We specialize in creating responsive and <br/>
-            dynamic websites that elevate your online <br/>
-            presence and engage your audience <br/>
-             effectively.
+          <span className="inline lg:block">We specialize in creating responsive and</span>  
+          <span className="inline lg:block">dynamic websites that elevate your online</span>  
+          <span className="inline lg:block">presence and engage your audience</span> 
+          <span className="inline lg:block">effectively.</span> 
           </p>
           </div>
         </div>
@@ -72,9 +72,9 @@ const About = () => {
           <div className=" pt-20 pb-16 text-center border-r border-gray-200">
           <h3 className="font-madefor text-[23.76px] font-semibold text-black mb-4">Backend Services</h3>
           <p className="font-madefor text-gray-900 leading-relaxed text-[16px] font-normal">
-            Our backend services focus on robust <br/>
-            architectures and scalable solutions to <br/>
-            supportyour applications' functionalities.
+            <span className="inline lg:block">Our backend services focus on robust</span> 
+            <span className="inline lg:block">architectures and scalable solutions to</span> 
+            <span className="inline lg:block">supportyour applications' functionalities.</span>
           </p>
           </div>
         </div>
@@ -82,10 +82,10 @@ const About = () => {
           <div className="pt-20 pb-16 px-10 text-center">
           <h3 className="font-madefor text-[23.76px] font-semibold text-black mb-4">DevOps Solutions</h3>
           <p className="font-madefor text-gray-900 leading-relaxed text-[16px] font-normal">
-            With our DevOps expertise, we streamline <br/>
-            your development processes and ensure <br/>
-            continuous delivery for efficient software <br/>
-             deployment.
+            <span className="inline lg:block">With our DevOps expertise, we streamline</span>
+            <span className="inline lg:block">your development processes and ensure</span> 
+            <span className="inline lg:block">continuous delivery for efficient software</span> 
+             <span className="inline lg:block">deployment.</span>
           </p>
         </div>
       </div>
@@ -97,36 +97,36 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 justify-evenly">
           <div className="text-center">
             <p className="text-gray-700 lg:mb-4 font-madefor text-[16px]">
-              The team at Satyos Solutions is <br/>
-              highly skilled and dedicated to <br/>
-              delivering top-quality results.
+              <span className="inline lg:block"> The team at Satyos Solutions is</span> 
+              <span className="inline lg:block">highly skilled and dedicated to </span>
+              <span className="inline lg:block">delivering top-quality results.</span>
             </p>
             <h4 className="text-[16px] font-madefor lg:pt-10 lg:pb-2 font-semibold text-gray-900">Ajay Kamath</h4>
             <p className="text-[14px] font-madefor text-gray-700 ">Founder, Brick Tree</p>
           </div>
           <div className="text-center">
             <p className="text-gray-700  lg:mb-4 font-madefor text-[16px]">
-              Working with Satyos Solutions has <br/>
-              been a game-changer for our <br/>
-              business growth.
+              <span className="inline lg:block">Working with Satyos Solutions has</span> 
+              <span className="inline lg:block">been a game-changer for our</span> 
+              <span className="inline lg:block">business growth.</span>
             </p>
             <h4 className="text-[16px] font-madefor lg:pt-10 lg:pb-2 font-semibold text-gray-900">David Brown</h4>
             <p className="text-[14px] font-madefor text-gray-700 ">Executive Manager, JSB Group</p>
           </div>
           <div className="text-center">
             <p className="text-gray-700  lg:mb-4 font-madefor text-[16px]"> 
-              Their attention to detail and <br/>
-              commitment to excellence set <br/>
-              Satyos Solutions apart.
+              <span className="inline lg:block">Their attention to detail and</span> 
+              <span className="inline lg:block">commitment to excellence set</span> 
+              <span className="inline lg:block">Satyos Solutions apart.</span>
             </p>
             <h4 className="text-[16px] font-madefor lg:pt-10 lg:pb-2 font-semibold text-gray-900">Rajan Malik</h4>
             <p className="text-[14px] font-madefor text-gray-700 ">Nue Fabrics</p>
           </div>
           <div className="text-center">
             <p className="text-gray-700  lg:mb-4 font-madefor text-[16px]">
-              Satyos Solutions is our go-to <br/>
-              partner for all our software <br/>
-              development needs.
+              <span className="inline lg:block">Satyos Solutions is our go-to</span> 
+              <span className="inline lg:block">partner for all our software</span> 
+              <span className="inline lg:block">development needs.</span>
             </p>
             <h4 className="text-[16px] font-madefor lg:pt-10 lg:pb-2 font-semibold text-gray-900">Deep Parmar</h4>
             <p className="text-[14px] font-madefor text-gray-700 ">Digi Finance</p>
