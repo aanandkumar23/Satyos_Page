@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
 
@@ -93,7 +92,7 @@ const About = () => {
       </div>
       <div style={{ backgroundColor: '#FFFFFF' }} className="text-black">
         <div className="pt-20 pb-0 lg:pb-40 max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
-        <h2 className="text-[26px] lg:text-[57.03px] font-madefor font-semibold text-center text-gray-900 mb-12">Client Testimonials</h2>
+        <h2 className="text-[26px] lg:text-[57.03px] font-madefor font-semibold text-center text-gray-900 mb-3 lg:mb-12">Client Testimonials</h2>
         <div className="hidden lg:flex">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 justify-evenly">
           <div className="text-center">
@@ -135,17 +134,17 @@ const About = () => {
           </div>
           </div>
           <div className="relative md:hidden">
-          <div>
-          <div className="absolute right-10 top-2 z-10 mb-4 flex gap-7">
-            <button className="swiper-button-next !bg-white text-blue-500 w-1 h-1 md:w-3 md:h-3 flex items-center justify-center">
-              
-           </button>
-          </div>
-          <div className="absolute right-28 top-2 z-10 mb-4 flex gap-7">
-            <button className="swiper-button-prev !bg-white text-blue-500 w-1 h-1 md:w-3 md:h-3 flex items-center justify-center">
-              
+          <div className="pb-3">
+          <div className="absolute right-10 top-2 z-10 mb-4 flex gap-1">
+            <button className="swiper-button-next !bg-white text-blue-500 w-6 h-6 flex items-center justify-center rounded-full">
+              <FaChevronRight className="text-2xl" />
             </button>
-          </div>
+    </div>
+    <div className="absolute right-20 top-2 z-10 mb-4 flex gap-1">
+      <button className="swiper-button-prev !bg-white text-blue-500 w-6 h-6 flex items-center justify-center rounded-full">
+        <FaChevronLeft className="text-2xl" />
+      </button>
+    </div>
         </div>
         <Swiper
           modules={[Navigation]}

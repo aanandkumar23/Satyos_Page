@@ -214,7 +214,7 @@ const ServicesPage = () => {
               <h2 className="text-[26px] lg:text-[54.66px] font-semibold font-madefor text-black mb-0 lg:mb-8 px-12 lg:px-24">FAQs</h2>
             </div>
 
-            <div style={{ backgroundColor: '#F0F0F0' }} className="text-black py-10 mx-6 px-4 lg:mx-0 sm:px-12 sm:w-[80vw] lg:max-w-full sm:mx-12 lg:mr-24">
+            <div style={{ backgroundColor: '#F0F0F0' }} className="text-black py-10 mx-6 px-4 lg:mx-0 sm:px-12 sm:w-[80] lg:max-w-full sm:mx-12 lg:mr-24">
             {/*<div className="bg-gray-50  ">*/}
 
               
@@ -245,7 +245,7 @@ const ServicesPage = () => {
                       setSearchTerm("");
                       setShowSearch(false);
                     }}
-                    className="absolute right-4 top-1/2  px-1 transform -translate-y-1/2 text-gray-800 hover:text-gray-800 text-lg"
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-800 hover:text-gray-800 text-lg"
                   >
                     ×
                   </button>
@@ -255,7 +255,7 @@ const ServicesPage = () => {
           </div>
 
           <div className="w-full">
-              <div className="hidden  md:flex space-x-6   mb-8 ">
+              <div className="hidden md:flex space-x-6   mb-8 ">
                 {Object.keys(faqs).map((tab) => (
                   <button
                     key={tab}

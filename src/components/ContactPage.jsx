@@ -51,7 +51,7 @@ const ContactPage = () => {
           backgroundSize: "90% 90%",
           }}
       >
-        <div className="max-w-4xl pt-28 lg:pt-24 mx-auto px-3">
+        <div className="max-w-4xl pt-28 pb-20 lg:pt-24 lg:pb-20 mx-auto px-3">
           <div className="bg-white pt-16 md:p-16 shadow-lg w-[80%] mx-auto sm:w-[80%] px-7 lg:w-full">
             <h2 className="text-[28px] font-semibold text-black mb-8">Contact Us</h2>
 
@@ -141,7 +141,8 @@ const ContactPage = () => {
               <div className="pt-1">
                 <button
                   type="submit"
-                  className="w-[55vw] lg:w-full md:w-auto lg:px-32 py-1 bg-transparent border border-black text-black rounded-full hover:bg-black hover:text-white transition-colors- font-light"
+                  className="w-[55vw] lg:w-full md:w-auto mb-2  lg:px-32 py-1 bg-transparent border cursor-pointer active:bg-black active:text-white
+                   border-black text-black rounded-full hover:bg-black hover:text-white transition-colors- font-light"
                 >
                   Submit {/*Change made*/}
                 </button>
@@ -161,7 +162,7 @@ const ContactPage = () => {
             <div>
               <h3 className="text-[18px] lg:text-[23.76px] px-7 lg:px-0  font-madefor font-semibold text-black mb-4">Send Us a Message</h3>
               <p className="text-black px-7 text-[16px] lg:px-0  font-madefor mb-1 lg:mb-6">Let's Discuss Your Project</p>
-              <button className="text-black px-7 text-[16px] lg:px-0  font-madefor hover:text-black font-normal underline">Submit</button>
+              <button className="text-black px-7 text-[16px] lg:px-0 cursor-pointer font-madefor hover:text-black font-normal underline">Submit</button>
             </div>
           </div>
         </div>

@@ -138,7 +138,8 @@ const Contact = () => {
               <div className="pt-1">
                 <button
                   type="submit"
-                  className="w-full md:w-auto px-28 py-1 bg-transparent border border-black text-black rounded-full hover:bg-black hover:text-white transition-colors"
+                  className="w-full cursor-pointer md:w-auto px-28 py-1 bg-transparent border active:bg-black active:text-white
+                   border-black text-black rounded-full  hover:bg-black hover:text-white transition-colors"
                 >
                   Submit
                 </button>

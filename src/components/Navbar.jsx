@@ -18,10 +18,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 md:h-24">
           <Link to="/" className="flex items-center h-14 lg:h-28">
             <img
-              src="src/components/satyoslogo.avif"
+              src="https://static.wixstatic.com/media/4036e0_6987370e4bd0428caaa83c21fefc904c~mv2.png/v1/fill/w_294,h_66,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%204.png"
               alt="SATYOS Logo"
               loading="lazy"
-              className="h-[50%] w-auto object-contain"
+              className="h-[5vh] md:h-[7.5vh]  w-auto object-contain"
             />
           </Link>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
 
           <div className="md:hidden">
             <button onClick={() => setIsOpen(true)} className="text-black">
-              <Menu className="h-10 w-10 lg:h-6 lg:w-6" />
+              <Menu className="h-8 w-8 lg:h-6 lg:w-6" />
             </button>
           </div>
         </div>
