@@ -61,9 +61,9 @@ const About = () => {
           <h3 className=" font-madefor text-[23.76px] font-semibold text-black mb-4">Web Development</h3>
           <p className="font-madefor text-gray-900 leading-relaxed text-[16px] font-normal">
           <span className="inline lg:block">We specialize in creating responsive and</span>  
-          <span className="inline lg:block">dynamic websites that elevate your online</span>  
-          <span className="inline lg:block">presence and engage your audience</span> 
-          <span className="inline lg:block">effectively.</span> 
+          <span className="inline lg:block"> dynamic websites that elevate your online</span>  
+          <span className="inline lg:block"> presence and engage your audience</span> 
+          <span className="inline lg:block"> effectively.</span> 
           </p>
           </div>
         </div>
