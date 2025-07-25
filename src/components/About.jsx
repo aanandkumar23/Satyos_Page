@@ -57,7 +57,7 @@ const About = () => {
       <div className="w-full  grid md:grid-cols-3 gap-0 min-h-[320px]">
         
         <div style={{ backgroundColor: '#C2C2C2' }} className="text-black">
-          <div className=" pt-20 pb-16 text-center border-r border-gray-200">
+          <div className=" pt-20 pb-16 px-10 text-center border-r border-gray-200">
           <h3 className=" font-madefor text-[23.76px] font-semibold text-black mb-4">Web Development</h3>
           <p className="font-madefor text-gray-900 leading-relaxed text-[16px] font-normal">
           <span className="inline lg:block">We specialize in creating responsive and</span>  
@@ -69,7 +69,7 @@ const About = () => {
         </div>
 
         <div style={{ backgroundColor: '#F0F0F0' }} className="text-black">
-          <div className=" pt-20 pb-16 text-center border-r border-gray-200">
+          <div className=" pt-20 pb-16 px-10 text-center border-r border-gray-200">
           <h3 className="font-madefor text-[23.76px] font-semibold text-black mb-4">Backend Services</h3>
           <p className="font-madefor text-gray-900 leading-relaxed text-[16px] font-normal">
             <span className="inline lg:block">Our backend services focus on robust</span> 
