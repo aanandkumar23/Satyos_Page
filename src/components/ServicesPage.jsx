@@ -216,8 +216,8 @@ const ServicesPage = () => {
 
             <div style={{ backgroundColor: '#F0F0F0' }} className="text-black py-10 mx-6 px-4 lg:mx-0 sm:px-12 sm:w-[80] lg:max-w-full sm:mx-12 lg:mr-24">
             {/*<div className="bg-gray-50  ">*/}
-
-              
+            {/*faq box fixed */}  
+            
             <div className="w-max-full flex items-center justify-between px-1 lg:px-8 mb-6">
               {!showSearch ? (
               <>
