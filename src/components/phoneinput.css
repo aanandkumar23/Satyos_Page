@@ -1,0 +1,21 @@
+/* Rotate dropdown arrow icon by 90 degrees */
+.react-tel-input .flag-dropdown .arrow {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.react-tel-input .search-emoji {
+  display: inline-block;
+  transform: rotate(270deg);
+  transition: transform 0.3s ease;
+  padding: 2px 2px;
+}
+
+.react-tel-input .country-list .search-box {
+  width: 80%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 8px 0;
+  font-size: 18px;
+}

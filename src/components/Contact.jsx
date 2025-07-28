@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Globe } from 'lucide-react'
 import 'react-phone-input-2/lib/style.css';
+import './phoneinput.css';
 import PhoneInput from 'react-phone-input-2';
 
 const Contact = () => {
