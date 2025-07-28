@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PhoneInput from 'react-phone-input-2';
+import './phoneinput.css';
 import 'react-phone-input-2/lib/style.css';
 
 const ContactPage = () => {
@@ -108,7 +109,7 @@ const ContactPage = () => {
                     Phone
                   </label>
                   <PhoneInput
-                    country={'ind'}
+                    country={'in'}
                     value={formData.phone}
                     onChange={(phone) => setFormData({ ...formData, phone })}
                     inputClass="!w-full !bg-transparent !border-0 !border-b !border-black focus:!border-gray-500 focus:!outline-none"
