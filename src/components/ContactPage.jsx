@@ -119,7 +119,7 @@ const ContactPage = () => {
                   />
                 </div>
                   
-                  <span></span>
+                  <span>{/*Change made*/}</span>
 
               </div>
               
