@@ -11,10 +11,23 @@
 }
 
 .react-tel-input .country-list .search-box {
-  width: 80%;
+  width: 40%;
   border: none;
   background-color: transparent;
   outline: none;
   padding: 8px 0;
   font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .react-tel-input .country-list .search-box {
+    width: 80%;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .react-tel-input .country-list .search-box {
+    width: 80%;
+  }
 }
