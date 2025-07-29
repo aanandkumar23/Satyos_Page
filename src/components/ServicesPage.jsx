@@ -214,7 +214,7 @@ const ServicesPage = () => {
               <h2 className="text-[26px] lg:text-[54.66px] font-semibold font-madefor text-black mb-0 lg:mb-8 px-12 lg:px-24">FAQs</h2>
             </div>
 
-            <div style={{ backgroundColor: '#F0F0F0' }} className="text-black py-10 mx-6 px-4 lg:mx-0 sm:px-12 sm:w-[80] lg:max-w-full sm:mx-12 lg:mr-24">
+            <div style={{ backgroundColor: '#F0F0F0' }} className="text-black py-10 mx-6 px-4 lg:mx-0 sm:px-12  lg:max-w-full sm:mx-12 lg:mr-24">
             {/*<div className="bg-gray-50  ">*/}
             {/*faq box fixed */}  
             
@@ -295,7 +295,7 @@ const ServicesPage = () => {
                 </select>
               </div>
               </div>
-              <span>{/*Change made*/}</span>
+              
 
               <div className="space-y-4">
                 {faqs[activeTab].map((faq, index) => (
