@@ -295,7 +295,7 @@ const ServicesPage = () => {
                 </select>
               </div>
               </div>
-              
+              <span>{/*Change made*/}</span>
 
               <div className="space-y-4">
                 {faqs[activeTab].map((faq, index) => (
